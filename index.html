@@ -3,63 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Puncak Komara</title>
+<title>Puncak Komara | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body{
   margin:0;
-  background:#111;
-  color:#eee;
-  font-family:Arial, sans-serif;
+  font-family:'Poppins', sans-serif;
+  background:#0f0f0f;
+  color:#e5e5e5;
 }
 
-.container{
+/* HERO */
+.hero{
   min-height:100vh;
   display:flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
+  padding:60px 20px;
 }
 
-.box{
-  background:#1c1c1c;
-  padding:50px;
-  border-radius:15px;
-  max-width:600px;
+.hero-box{
+  background:#1a1a1a;
+  border-radius:20px;
+  max-width:1100px;
   width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+}
+
+.hero-text{
+  flex:1;
+  padding:60px;
+}
+
+.hero-text h1{
+  font-size:46px;
+  margin:0;
+}
+
+.hero-text p{
+  color:#aaa;
+  margin-top:10px;
+  font-size:18px;
+}
+
+.hero-text ul{
+  list-style:none;
+  padding:0;
+  margin-top:30px;
+}
+
+.hero-text li{
+  margin-bottom:12px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 32px;
+  background:#333;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+}
+
+.btn:hover{
+  background:#555;
+}
+
+.hero-photo{
+  flex:1;
+  background:url("profile.jpg") center/cover no-repeat;
+  min-height:400px;
+}
+
+/* PORTFOLIO */
+.portfolio{
+  padding:80px 20px;
   text-align:center;
 }
 
-h1{
-  margin:0;
-  font-size:40px;
+.portfolio h2{
+  font-size:36px;
+  margin-bottom:40px;
 }
 
-p{
-  color:#aaa;
-  margin-top:10px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
 }
 
-a{
-  display:inline-block;
-  margin-top:30px;
-  padding:12px 25px;
-  background:#333;
-  color:white;
-  text-decoration:none;
-  border-radius:25px;
+.card{
+  background:#1a1a1a;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.card p{
+  padding:15px;
+  color:#ccc;
+}
+
+@media(max-width:768px){
+  .hero-box{
+    flex-direction:column-reverse;
+  }
+  .hero-text{
+    padding:40px;
+  }
+  .hero-text h1{
+    font-size:34px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <div class="box">
-    <h1>Puncak Komara</h1>
-    <p>Teknisi Audio Visual & Live Streaming</p>
-    <a href="https://wa.me/008112206855">Hubungi WhatsApp</a>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-box">
+
+    <div class="hero-text">
+      <h1>Puncak Komara</h1>
+      <p>Teknisi Audio Visual & Live Streaming</p>
+
+      <ul>
+        <li>🎧 Sound System Setup</li>
+        <li>🎥 Kamera & Video Switching</li>
+        <li>📡 Live Streaming Event</li>
+        <li>🎤 Event Production Support</li>
+      </ul>
+
+      <a class="btn" href="https://wa.me/008112206855">Hubungi WhatsApp</a>
+    </div>
+
+    <div class="hero-photo"></div>
+
   </div>
-</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio">
+  <h2>Portofolio</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="project1.jpg">
+      <p>Live Streaming Seminar</p>
+    </div>
+
+    <div class="card">
+      <img src="project2.jpg">
+      <p>Sound System Event Outdoor</p>
+    </div>
+
+    <div class="card">
+      <img src="project3.jpg">
+      <p>Video Switching Konser</p>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>
