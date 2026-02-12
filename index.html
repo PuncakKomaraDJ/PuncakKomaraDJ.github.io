@@ -6,128 +6,7 @@
 <title>Puncak Komara | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-body{
-  margin:0;
-  font-family:'Poppins', sans-serif;
-  background:#0f0f0f;
-  color:#e5e5e5;
-}
-
-/* HERO */
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:60px 20px;
-}
-
-.hero-box{
-  background:#1a1a1a;
-  border-radius:20px;
-  max-width:1100px;
-  width:100%;
-  display:flex;
-  flex-wrap:wrap;
-  overflow:hidden;
-}
-
-.hero-text{
-  flex:1;
-  padding:60px;
-}
-
-.hero-text h1{
-  font-size:46px;
-  margin:0;
-}
-
-.hero-text p{
-  color:#aaa;
-  margin-top:10px;
-  font-size:18px;
-}
-
-.hero-text ul{
-  list-style:none;
-  padding:0;
-  margin-top:30px;
-}
-
-.hero-text li{
-  margin-bottom:12px;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:30px;
-  padding:14px 32px;
-  background:#333;
-  color:#fff;
-  text-decoration:none;
-  border-radius:30px;
-}
-
-.btn:hover{
-  background:#555;
-}
-
-.hero-photo{
-  flex:1;
-  background:url("profile.jpg") center/cover no-repeat;
-  min-height:400px;
-}
-
-/* PORTFOLIO */
-.portfolio{
-  padding:80px 20px;
-  text-align:center;
-}
-
-.portfolio h2{
-  font-size:36px;
-  margin-bottom:40px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-  max-width:1100px;
-  margin:auto;
-}
-
-.card{
-  background:#1a1a1a;
-  border-radius:15px;
-  overflow:hidden;
-}
-
-.card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-}
-
-.card p{
-  padding:15px;
-  color:#ccc;
-}
-
-@media(max-width:768px){
-  .hero-box{
-    flex-direction:column-reverse;
-  }
-  .hero-text{
-    padding:40px;
-  }
-  .hero-text h1{
-    font-size:34px;
-  }
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -150,7 +29,7 @@ body{
       <a class="btn" href="https://wa.me/008112206855">Hubungi WhatsApp</a>
     </div>
 
-    <div class="hero-photo"></div>
+    <div class="hero-photo" style="background-image: url('images/profile.jpg');"></div>
 
   </div>
 </section>
@@ -162,17 +41,17 @@ body{
   <div class="grid">
 
     <div class="card">
-      <img src="project1.jpg">
+      <img src="images/project1.jpg" alt="Live Streaming Seminar">
       <p>Live Streaming Seminar</p>
     </div>
 
     <div class="card">
-      <img src="project2.jpg">
+      <img src="images/project2.jpg" alt="Sound System Event Outdoor">
       <p>Sound System Event Outdoor</p>
     </div>
 
     <div class="card">
-      <img src="project3.jpg">
+      <img src="images/project3.jpg" alt="Video Switching Konser">
       <p>Video Switching Konser</p>
     </div>
 
