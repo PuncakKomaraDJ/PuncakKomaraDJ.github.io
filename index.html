@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Puncak Komara DJ</title>
+<title>Puncak Komara - Audio Visual Technician</title>
 
 <style>
 * {
@@ -11,116 +11,81 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
 }
 
 body {
-  background: black;
-  color: white;
-}
-
-section {
-  min-height: 100vh;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+              url('profile.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px;
-}
-
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-              url('Picture Profile.jpg') center/cover no-repeat;
-}
-
-.hero h1 {
-  font-size: 60px;
-  letter-spacing: 6px;
-}
-
-.hero p {
-  margin-top: 15px;
-  color: #aaa;
-}
-
-.btn {
-  margin-top: 30px;
-  padding: 12px 28px;
-  border: 1px solid #c40000;
   color: white;
+}
+
+.container {
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  color: #bbb;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.desc {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.buttons a {
   text-decoration: none;
+  color: white;
+  border: 1px solid #c40000;
+  padding: 10px 26px;
+  margin: 6px;
   display: inline-block;
   transition: 0.3s;
+  font-size: 14px;
 }
 
-.btn:hover {
+.buttons a:hover {
   background: #c40000;
   color: black;
 }
 
-.about, .portfolio, .contact {
-  background: #0a0a0a;
-  flex-direction: column;
-}
-
-h2 {
-  font-size: 35px;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
-}
-
-.portfolio-item {
-  margin: 10px 0;
-  color: #bbb;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-  color: #555;
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <div>
-    <h1>PUNCAK KOMARA DJ</h1>
-    <p>Livestreaming • Performance • Event</p>
-    <a href="#contact" class="btn">CONTACT NOW</a>
+<div class="container">
+  <h1>PUNCAK KOMARA</h1>
+  <div class="tagline">Audio Visual & Live Streaming Technician</div>
+  <div class="desc">
+    Professional technical support for live events, hybrid meetings,
+    webinars, and broadcast production.
   </div>
-</section>
 
-<section class="about">
-  <div>
-    <h2>ABOUT</h2>
-    <p>Professional in A/V Broadcast specializing in Livestreaming, private event, and festival performances. Delivering powerful atmosphere and unforgettable event experience.</p>
+  <div class="buttons">
+    <a href="mailto:emailkamu@gmail.com">Contact</a>
+    <a href="https://instagram.com/usernamekamu" target="_blank">Portfolio</a>
   </div>
-</section>
-
-<section class="portfolio">
-  <div>
-    <h2>PORTFOLIO</h2>
-    <div class="portfolio-item">• Gov Performance - Jakarta</div>
-    <div class="portfolio-item">• Private Event - Bali</div>
-    <div class="portfolio-item">• Festival Guest </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div>
-    <h2>CONTACT</h2>
-    <p>Email: silentatsummit@gmail.com</p>
-    <p>Instagram: @abu_tenaya</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Puncak Komara DJ
-</footer>
+</div>
 
 </body>
 </html>
-
