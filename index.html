@@ -3,50 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Puncak Komara DJ - Audio Visual Technician</title>
+<title>Puncak Komara DJ</title>
+
+<!-- Roboto Black -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 
 <style>
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
   height: 100vh;
   background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-              url('Picture Profile.jpg') center/cover no-repeat;
+              url('profile.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+  font-family: Arial, sans-serif;
 }
 
-.container {
-  animation: fadeIn 1.5s ease forwards;
-  opacity: 0;
-  max-width: 800px;
-}
+/* ===== NAMA DENGAN TEKSTUR RUST ===== */
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
 
-h1 {
-  font-size: 48px;
-  letter-spacing: 5px;
-  margin-bottom: 15px;
+  background: url('rust.jpg') center/cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  filter: brightness(1.3) contrast(1.4);
+  text-shadow: 2px 2px 12px rgba(196,0,0,0.35);
 }
 
 .tagline {
+  margin-top: 25px;
   color: #bbb;
-  letter-spacing: 2px;
-  margin-bottom: 25px;
   font-size: 18px;
+  letter-spacing: 2px;
 }
 
-.desc {
-  color: #888;
-  font-size: 14px;
-  margin-bottom: 35px;
+.buttons {
+  margin-top: 35px;
 }
 
 .buttons a {
@@ -64,29 +69,23 @@ h1 {
   background: #c40000;
   color: black;
 }
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <h1>PUNCAK KOMARA DJ</h1>
-  <div class="tagline">Audio Visual & Live Streaming Technician</div>
-  <div class="desc">
-    Professional technical support for live events, hybrid meetings, and broadcast production.
+<div>
+  <div class="name">PUNCAK KOMARA DJ</div>
+
+  <div class="tagline">
+    Audio Visual & Live Streaming Technician
   </div>
 
   <div class="buttons">
-    <a href="mailto:silentatsummit@gmail.com">Contact</a>
+    <a href="mailto:emailkamu@gmail.com">Contact</a>
     <a href="https://instagram.com/usernamekamu" target="_blank">Portfolio</a>
   </div>
 </div>
 
 </body>
 </html>
-
-
